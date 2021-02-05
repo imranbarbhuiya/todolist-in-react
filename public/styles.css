@@ -53,8 +53,6 @@ body {
   color: hsla(260, 2%, 25%, 0.7);
   width: 70%;
   margin-bottom: 20px;
-}
-.form input:focus {
   outline: none;
 }
 button {
@@ -65,6 +63,8 @@ button {
   padding-bottom: 3px;
   border-radius: 5px;
   background-color: #ffeaa7;
+  outline: none;
+  cursor: pointer;
 }
 button span {
   background: #f1f5f8;
