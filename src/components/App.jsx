@@ -12,10 +12,6 @@ function App() {
     setInput(ev.target.value);
   }
 
-  function inputItem(item) {
-    return <li>{item} </li>;
-  }
-
   return (
     <div className="container">
       <div className="heading">
@@ -28,7 +24,11 @@ function App() {
         </button>
       </div>
       <div>
-        <ul>{items.map(inputItem)}</ul>
+        <ul>
+          {items.map((item) => (
+            <li>{item} </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
