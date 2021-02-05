@@ -1,2 +1,3 @@
 # todolist-in-react
-Created with CodeSandbox
+
+A simple todolist creted with react in codesandbox by imran

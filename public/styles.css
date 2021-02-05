@@ -54,7 +54,9 @@ body {
   width: 70%;
   margin-bottom: 20px;
 }
-
+.form input:focus {
+  outline: none;
+}
 button {
   padding: 0;
   border: none;
