@@ -74,10 +74,18 @@ button span {
   border: 2px solid hsl(198, 1%, 29%);
 }
 
+ul div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 li {
   text-align: left;
   position: relative;
   padding: 0.5rem;
+}
+
+p span {
   cursor: pointer;
-  user-select: none;
 }

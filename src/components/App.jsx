@@ -13,6 +13,14 @@ function App() {
     setInput(ev.target.value);
   }
 
+  function deleteItem(id) {
+    setItems((prevValue) => {
+      return prevValue.filter((item, index) => {
+        return index !== id;
+      });
+    });
+  }
+
   return (
     <div className="container">
       <div className="heading">
@@ -26,8 +34,13 @@ function App() {
       </div>
       <div>
         <ul>
-          {items.map((item) => (
-            <ToDoItem item={item} />
+          {items.map((item, index) => (
+            <ToDoItem
+              key={index}
+              id={index}
+              item={item}
+              onChecked={deleteItem}
+            />
           ))}
         </ul>
       </div>
